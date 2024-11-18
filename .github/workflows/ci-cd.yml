@@ -32,6 +32,6 @@ jobs:
    #   - name: Automated Tests
    #     run: dotnet test Weather.Tests -c Release --no-build
 
-  #    - name: Publish App
-  #      run: dotnet publish -c Release -p ./out WebApi-Weather/WebApi-Weather.sln
+      - name: Publish App
+        run: dotnet publish -c Release -o .\out .\ci-cd_OG\ci-cd_OG.sln
   
