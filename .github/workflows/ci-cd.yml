@@ -33,5 +33,5 @@ jobs:
    #     run: dotnet test Weather.Tests -c Release --no-build
 
       - name: Publish App
-        run: dotnet publish -c Release -o .\out .\ci-cd_OG\ci-cd_OG.sln
+        run: dotnet publish -c Release -o ./out ./ci-cd_OG/ci-cd_OG.sln
   
