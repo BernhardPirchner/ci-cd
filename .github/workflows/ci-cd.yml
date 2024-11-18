@@ -24,8 +24,14 @@ jobs:
 
       # dotnet is already installed from the previous step, so we can just run
       - name: Restore dependencies
-        run: dotnet restore ../ci-cd/ci-cd_OG.sln
+        run:  dotnet restore ./ci-cd_OG/ci-cd_OG.sln
 
       - name: Build App
-        run: dotnet build -c Release --no-restore ../ci-cd/ci-cd_OG.sln
+        run: dotnet build -c Release --no-restore ./ci-cd_OG/ci-cd_OG.sln
+
+   #   - name: Automated Tests
+   #     run: dotnet test Weather.Tests -c Release --no-build
+
+  #    - name: Publish App
+  #      run: dotnet publish -c Release -p ./out WebApi-Weather/WebApi-Weather.sln
   
