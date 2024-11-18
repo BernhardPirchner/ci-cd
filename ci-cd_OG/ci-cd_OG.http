@@ -1,0 +1,6 @@
+@ci_cd_OG_HostAddress = http://localhost:5199
+
+GET {{ci_cd_OG_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
